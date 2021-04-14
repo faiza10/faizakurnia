@@ -9,6 +9,15 @@ package Tugas;
  *
  * @author entercomp
  */
+import java.util.Scanner;
 public class Tugas1Main {
-    
+    public static void main(String[] args) {
+           Scanner in= new Scanner(System.in);
+           System.out.print("Masukkan kalimat yang diinginkan : ");
+           String kal=in.nextLine();
+           
+           Tugas1 tgs = new Tugas1(kal.length());
+           System.out.println("Hasil :");
+           tgs.PrintBalik(kal);
+    }
 }
